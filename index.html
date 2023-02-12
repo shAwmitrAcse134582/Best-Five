@@ -33,7 +33,7 @@
         <section class="px-3 mt-10">
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
                 <div class="card-section border lg:col-span-2 md:col-span-1 bg-slate-900">
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3 p-3">
+                    <div id="cards" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3 p-3">
                         <div class="p-3 border border-slate-700 shadow">
                             <div>
                                 <img src="Images/p1.png" alt="">
@@ -182,10 +182,72 @@
                     </div>
 
                 </div>
+                <!-- input section -->
+                <div class="w-full p-7 border bg-slate-900 text-white">
+                    <div>
+                        <div>
+                            <h1 class="text-4xl text-center">Select your Best - V</h1>
+                            <ul id="player-list" class="list-decimal text-left mb-3"></ul>
+
+                        </div>
+                        <div>
+                            <h1 class="text-4xl text-center mb-3">Budget</h1>
+                        </div>
+                        <div class="flex items-center flex-direction-column justify-between">
+                            <span class="text-xl">Per Player:</span>
+                            <input type="number" id="player-input-element"
+                                class="ml-3 indent-3 py-1 outline-none text-black" />
+                        </div>
+                        <div>
+                            <button class="text-white block w-full bg-blue-700 mt-5 text-xl py-2"
+                                id="calculate-player-cost">
+                                Calculate
+                            </button>
+                        </div>
+
+                        <div>
+                            <h1 class="text-2xl my-8 flex justify-between">
+                                <div>Player expenses:</div>
+                                <div class="flex text-blue-600 font-bold">
+                                    <span id="dollar-sign-player" class="hidden">$</span><span id="players-cost"></span>
+                                </div>
+                            </h1>
+                            <div class="flex items-center flex-direction-column justify-between my-2">
+                                <span class="text-xl">Manager:</span>
+                                <input type="number" id="manager-input"
+                                    class="ml-3 indent-3 py-1 outline-none text-black" />
+                            </div>
+
+                            <div class="flex items-center flex-direction-column justify-between my-3">
+                                <span class="text-xl">Coach:</span>
+                                <input type="number" id="coach-input-element"
+                                    class="ml-3 indent-3 py-1 outline-none text-black" />
+                            </div>
+                            <div>
+                                <button class="text-white block w-full bg-blue-700 mt-5 text-xl py-2"
+                                    id="calculate-total-cost">
+                                    Calculate
+                                </button>
+                            </div>
+                            <h1 class="text-2xl mt-6 flex justify-between">
+                                <div>Total:</div>
+                                <div class="flex text-red-600 font-bold">
+                                    <span id="dollar-sign-total" class="hidden">$</span><span id="total-cost"></span>
+                                </div>
+                            </h1>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
-
+    <hr>
+    <!-- footer section -->
+    <footer class="bg-slate-900 mx-3 p-10 text-white">
+        <h1 class="text-center">Copyright &copy; 2023 All Rights Reserved.</h1>
+    </footer>
 </body>
 
 </html>
